@@ -30,10 +30,6 @@
 	path = lib/kuby-digitalocean
 	url = https://github.com/getkuby/kuby-digitalocean.git
 	branch = master
-[submodule "lib/kuby-kubedb"]
-	path = lib/kuby-kubedb
-	url = https://github.com/getkuby/kuby-kubedb.git
-	branch = master
 [submodule "lib/kuby-linode"]
 	path = lib/kuby-linode
 	url = https://github.com/getkuby/kuby-linode.git
@@ -41,4 +37,8 @@
 [submodule "lib/kuby"]
 	path = lib/kuby
 	url = https://github.com/getkuby/kuby.git
+	branch = master
+[submodule "lib/kuby-kube-db"]
+	path = lib/kuby-kube-db
+	url = https://github.com/getkuby/kuby-kube-db.git
 	branch = master
