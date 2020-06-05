@@ -1,0 +1,44 @@
+[submodule "lib/docker-remote"]
+	path = lib/docker-remote
+	url = https://github.com/getkuby/docker-remote.git
+	branch = master
+[submodule "lib/helm-cli"]
+	path = lib/helm-cli
+	url = https://github.com/getkuby/helm-cli.git
+	branch = master
+[submodule "lib/helm-rb"]
+	path = lib/helm-rb
+	url = https://github.com/getkuby/helm-rb.git
+	branch = master
+[submodule "lib/kube-dsl"]
+	path = lib/kube-dsl
+	url = https://github.com/getkuby/kube-dsl.git
+	branch = master
+[submodule "lib/kubectl-rb"]
+	path = lib/kubectl-rb
+	url = https://github.com/getkuby/kubectl-rb.git
+	branch = master
+[submodule "lib/kubernetes-cli"]
+	path = lib/kubernetes-cli
+	url = https://github.com/getkuby/kubernetes-cli.git
+	branch = master
+[submodule "lib/kuby-cert-manager"]
+	path = lib/kuby-cert-manager
+	url = https://github.com/getkuby/kuby-cert-manager.git
+	branch = master
+[submodule "lib/kuby-digitalocean"]
+	path = lib/kuby-digitalocean
+	url = https://github.com/getkuby/kuby-digitalocean.git
+	branch = master
+[submodule "lib/kuby-kubedb"]
+	path = lib/kuby-kubedb
+	url = https://github.com/getkuby/kuby-kubedb.git
+	branch = master
+[submodule "lib/kuby-linode"]
+	path = lib/kuby-linode
+	url = https://github.com/getkuby/kuby-linode.git
+	branch = master
+[submodule "lib/kuby"]
+	path = lib/kuby
+	url = https://github.com/getkuby/kuby.git
+	branch = master
