@@ -35,7 +35,7 @@
 	url = https://github.com/getkuby/kuby-linode.git
 	branch = master
 [submodule "lib/kuby"]
-	path = lib/kuby
+	path = lib/kuby-core
 	url = https://github.com/getkuby/kuby.git
 	branch = master
 [submodule "lib/kuby-kube-db"]
