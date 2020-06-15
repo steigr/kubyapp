@@ -42,3 +42,19 @@
 	path = lib/kuby-kube-db
 	url = https://github.com/getkuby/kuby-kube-db.git
 	branch = master
+[submodule "lib/kuby-azure"]
+	path = lib/kuby-azure
+	url = git@github.com:getkuby/kuby-azure.git
+	branch = master
+[submodule "lib/kuby-eks"]
+	path = lib/kuby-eks
+	url = git@github.com:getkuby/kuby-eks.git
+	branch = master
+[submodule "lib/aws-iam-authenticator-rb"]
+	path = lib/aws-iam-authenticator-rb
+	url = git@github.com:getkuby/aws-iam-authenticator-rb.git
+	branch = master
+[submodule "lib/kuby-sidekiq"]
+	path = lib/kuby-sidekiq
+	url = git@github.com:getkuby/kuby-sidekiq.git
+	branch = master
