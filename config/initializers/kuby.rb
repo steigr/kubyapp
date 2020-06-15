@@ -62,31 +62,6 @@ Kuby.define(:production) do
 
     add_plugin :sidekiq
 
-    provider :digitalocean do
-      access_token Rails.application.credentials[:KUBYAPP_DIGITALOCEAN_ACCESS_TOKEN]
-      cluster_id '1144432a-6a4d-4c86-bfb0-5d931c63bdc1'
-    end
-
-    # provider :minikube
-
-    # provider :azure do
-    #   tenant_id '398b9b83-6ea6-47df-b629-8cae96852653'
-    #   client_id 'fba52f86-e892-49ff-b2ef-88677d784977'
-    #   client_secret 'F7~.by-.T-np.5W6ffMs3rQqou0xiDJws5'
-    #   subscription_id 'c035e0dd-a061-4d70-a178-3b59554c923c'
-    #   resource_group_name 'kuby'
-    #   resource_name 'kubyapp'
-    # end
-
-    # provider :eks do
-    #   region 'us-west-2'
-    #   cluster_name 'kubyapp'
-    #   credentials(
-    #     Aws::Credentials.new(
-    #       ENV['KUBYAPP_AWS_ACCESS_KEY_ID'],
-    #       ENV['KUBYAPP_AWS_ACCESS_SECRET_KEY']
-    #     )
-    #   )
-    # end
+    provider :minikube
   end
 end
