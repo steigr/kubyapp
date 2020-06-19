@@ -3,8 +3,8 @@ require 'aws-sdk-eks'
 
 class LocalGems
   def apply_to(dockerfile)
-    dockerfile.copy('./lib/kuby-core/kuby-core.gemspec', './lib/kuby-core/kuby.gemspec')
-    dockerfile.copy('./lib/kuby-core/lib/kuby/version.rb', './lib/kuby-core/lib/kuby/version.rb')
+    # dockerfile.copy('./lib/kuby-core/kuby-core.gemspec', './lib/kuby-core/kuby.gemspec')
+    # dockerfile.copy('./lib/kuby-core/lib/kuby/version.rb', './lib/kuby-core/lib/kuby/version.rb')
 
     # dockerfile.copy('./lib/kuby-azure/kuby-azure.gemspec', './lib/kuby-azure/kuby-azure.gemspec')
     # dockerfile.copy('./lib/kuby-azure/lib/kuby/azure/version.rb', './lib/kuby-azure/lib/kuby/azure/version.rb')
@@ -15,8 +15,8 @@ class LocalGems
     # dockerfile.copy('./lib/kuby-linode/kuby-linode.gemspec', './lib/kuby-linode/kuby-linode.gemspec')
     # dockerfile.copy('./lib/kuby-linode/lib/kuby/linode/version.rb', './lib/kuby-linode/lib/kuby/linode/version.rb')
 
-    dockerfile.copy('./lib/kube-dsl/kube-dsl.gemspec', './lib/kube-dsl/kube-dsl.gemspec')
-    dockerfile.copy('./lib/kube-dsl/lib/kube-dsl/version.rb', './lib/kube-dsl/lib/kube-dsl/version.rb')
+    # dockerfile.copy('./lib/kube-dsl/kube-dsl.gemspec', './lib/kube-dsl/kube-dsl.gemspec')
+    # dockerfile.copy('./lib/kube-dsl/lib/kube-dsl/version.rb', './lib/kube-dsl/lib/kube-dsl/version.rb')
 
     # dockerfile.copy('./lib/kuby-cert-manager/kuby-cert-manager.gemspec', './lib/kuby-cert-manager/kuby-cert-manager.gemspec')
     # dockerfile.copy('./lib/kuby-cert-manager/lib/kuby/cert-manager/version.rb', './lib/kuby-cert-manager/lib/kuby/cert-manager/version.rb')
@@ -36,8 +36,8 @@ class LocalGems
     # dockerfile.copy('./lib/kubernetes-cli/kubernetes-cli.gemspec', './lib/kubernetes-cli/kubernetes-cli.gemspec')
     # dockerfile.copy('./lib/kubernetes-cli/lib/kubernetes-cli/version.rb', './lib/kubernetes-cli/lib/kubernetes-cli/version.rb')
 
-    dockerfile.copy('./lib/kuby-sidekiq/kuby-sidekiq.gemspec', './lib/kuby-sidekiq/kuby-sidekiq.gemspec')
-    dockerfile.copy('./lib/kuby-sidekiq/lib/kuby/sidekiq/version.rb', './lib/kuby-sidekiq/lib/kuby/sidekiq/version.rb')
+    # dockerfile.copy('./lib/kuby-sidekiq/kuby-sidekiq.gemspec', './lib/kuby-sidekiq/kuby-sidekiq.gemspec')
+    # dockerfile.copy('./lib/kuby-sidekiq/lib/kuby/sidekiq/version.rb', './lib/kuby-sidekiq/lib/kuby/sidekiq/version.rb')
   end
 end
 

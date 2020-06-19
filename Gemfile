@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.6'
+ruby '2.5.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
@@ -31,8 +31,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'mysql2'
 gem 'sidekiq'
 
-gem 'kuby-core', path: './lib/kuby-core'
-gem 'kube-dsl', path: './lib/kube-dsl'
+gem 'kuby-core'#, path: './lib/kuby-core'
+gem 'kube-dsl'# , path: './lib/kube-dsl'
 gem 'kuby-eks' #, path: './lib/kuby-eks'
 gem 'aws-iam-authenticator-rb'# , path: './lib/aws-iam-authenticator-rb'
 gem 'kuby-azure'#, path: './lib/kuby-azure'
@@ -40,7 +40,7 @@ gem 'kuby-digitalocean'#, path: './lib/kuby-digitalocean'
 gem 'kuby-linode'# , path: './lib/kuby-linode'
 gem 'kuby-cert-manager'#, path: './lib/kuby-cert-manager'
 gem 'kuby-kube-db'#, path: './lib/kuby-kube-db'
-gem 'kuby-sidekiq', path: './lib/kuby-sidekiq'
+gem 'kuby-sidekiq'#, path: './lib/kuby-sidekiq'
 gem 'kubernetes-cli'#, path: './lib/kubernetes-cli'
 gem 'docker-remote'#, path: './lib/docker-remote'
 gem 'helm-rb'#, path: './lib/helm-rb'

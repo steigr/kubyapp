@@ -1,28 +1,30 @@
 PATH
-  remote: lib/kube-dsl
-  specs:
-    kube-dsl (0.2.0)
-      dry-inflector (~> 0.2)
-
-PATH
   remote: lib/kuby-core
   specs:
     kuby-core (0.2.0)
       colorize (~> 0.8)
       docker-remote (~> 0.1)
       krane (~> 1.0)
-      kube-dsl (~> 0.1)
-      kubernetes-cli (~> 0.1)
+      kube-dsl (~> 0.3)
+      kubernetes-cli (~> 0.2)
       kuby-cert-manager (~> 0.1)
-      kuby-kube-db (~> 0.1)
+      kuby-kube-db (~> 0.4)
       railties (>= 5.1)
       rouge (~> 3.0)
+
+PATH
+  remote: lib/kuby-kube-db
+  specs:
+    kuby-kube-db (0.4.0)
+      helm-cli (~> 0.2)
+      kube-dsl (~> 0.3)
 
 PATH
   remote: lib/kuby-sidekiq
   specs:
     kuby-sidekiq (0.1.0)
-      kuby-kube-db (~> 0.2)
+      kube-dsl (~> 0.3)
+      kuby-kube-db (~> 0.3)
 
 GEM
   remote: https://rubygems.org/
@@ -129,10 +131,6 @@ GEM
     docker-remote (0.1.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.7.5)
-    dotenv-rails (2.7.5)
-      dotenv (= 2.7.5)
-      railties (>= 3.2, < 6.1)
     droplet_kit (3.8.0)
       faraday (>= 0.15)
       kartograph (~> 0.2.3)
@@ -153,14 +151,14 @@ GEM
       rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    googleauth (0.12.0)
+    googleauth (0.13.0)
       faraday (>= 0.17.3, < 2.0)
       jwt (>= 1.4, < 3.0)
       memoist (~> 0.16)
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
       signet (~> 0.14)
-    helm-cli (0.1.0)
+    helm-cli (0.2.0)
       helm-rb (~> 0.1)
     helm-rb (0.1.0-x86_64-darwin)
     http (4.4.1)
@@ -196,9 +194,11 @@ GEM
       oj (~> 3.0)
       statsd-instrument (>= 2.8, < 3.1)
       thor (>= 1.0, < 2.0)
-    kubeclient (4.6.0)
+    kube-dsl (0.3.0)
+      dry-inflector (~> 0.2)
+    kubeclient (4.7.0)
       http (>= 3.0, < 5.0)
-      recursive-open-struct (~> 1.0, >= 1.0.4)
+      recursive-open-struct (~> 1.1, >= 1.1.1)
       rest-client (~> 2.0)
     kubectl-rb (0.1.0-x86_64-darwin)
     kubernetes-cli (0.2.0)
@@ -217,8 +217,6 @@ GEM
       aws-iam-authenticator-rb (~> 0.1)
       aws-sdk-eks (~> 1.38)
       kube-dsl (~> 0.1)
-    kuby-kube-db (0.2.0)
-      helm-cli (~> 0.1)
     kuby-linode (0.1.0)
       faraday (~> 0.17)
       kube-dsl (~> 0.1)
@@ -402,18 +400,17 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   docker-remote
-  dotenv-rails
   helm-cli
   helm-rb
   jbuilder (~> 2.7)
-  kube-dsl!
+  kube-dsl
   kubernetes-cli
   kuby-azure
   kuby-cert-manager
   kuby-core!
   kuby-digitalocean
   kuby-eks
-  kuby-kube-db
+  kuby-kube-db!
   kuby-linode
   kuby-sidekiq!
   listen (>= 3.0.5, < 3.2)
@@ -433,7 +430,7 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 RUBY VERSION
-   ruby 2.5.6p201
+   ruby 2.5.8p224
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
