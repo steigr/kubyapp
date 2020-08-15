@@ -10,6 +10,12 @@ A test Rails app that includes all the Kuby gems as git submodules. Facilitates 
     git submodule update --init --recursive
     ```
 
+1. Install required libraries ( macos only):
+
+    ```bash
+    brew install mysql
+    ```
+
 1. Install dependencies:
 
     ```bash
